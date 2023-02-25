@@ -3,7 +3,7 @@ BIN := app
 SRC := $(shell find src -type f -name '*.cpp')
 OBJ := $(SRC:.cpp=.o)
 
-CXXFLAGS := -std=c++20
+CXXFLAGS := -std=c++20 -Ideps/entt/src -Ideps/edyn/include
 LDLIBS := -Ldeps -ledyn
 
 EDYN_LIB := deps/libedyn.a
