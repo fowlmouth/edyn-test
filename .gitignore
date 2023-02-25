@@ -1,1 +1,3 @@
 *.o
+app
+deps/libedyn.a
